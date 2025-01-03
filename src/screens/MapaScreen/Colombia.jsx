@@ -6,6 +6,7 @@ import AudioPlayer from "../../components/AudioPlayer";
 import VideoPlayer from "../../components/VideoPlayer";
 import ImageGallery from "../../components/ImageGallery";
 import PDFViewer from "../../components/PDFViewerx"
+import YouTubePlayer from "../../components/YoutubePlayer";
 
 const Colombia = () => {
 
@@ -137,7 +138,7 @@ const Colombia = () => {
                             ]
                           }
                         />
-                      ) : null}
+                      ) : ""}
                     </div>
                   ))}
                 </div>

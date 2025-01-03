@@ -23,10 +23,11 @@ const AtlasScreen = () => {
 
   useEffect(() => {
     const fetchTags = async () => {
-      const STATIC = import.meta.env.VITE_STATIC
-      const pasoTags = STATIC === "1" ? await (await fetch(`/api/tags/paso.json`)).json() : await getTagsByCategory("paso")
-      const pisadaTags = STATIC === "1" ? await (await fetch(`/api/tags/pisada.json`)).json() : await getTagsByCategory("pisada")
-      const huellaTags = STATIC === "1" ? await (await fetch(`/api/tags/huella.json`)).json() : await getTagsByCategory("huella")
+      // const STATIC = import.meta.env.VITE_STATIC
+      const STATIC = "1";
+      const pasoTags = STATIC === "1" ? await (await fetch(`/tags/paso.json`)).json() : await getTagsByCategory("paso")
+      const pisadaTags = STATIC === "1" ? await (await fetch(`/tags/pisada.json`)).json() : await getTagsByCategory("pisada")
+      const huellaTags = STATIC === "1" ? await (await fetch(`/tags/huella.json`)).json() : await getTagsByCategory("huella")
       setPasoTags(pasoTags.data.data)
       setPisadaTags(pisadaTags.data.data)
       setHuellaTags(huellaTags.data.data)

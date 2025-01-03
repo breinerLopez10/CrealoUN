@@ -43,7 +43,7 @@ const Section = styled('section')(({ theme }) => ({
 
 const TagDetail = ({ isOpen, setIsOpen, tag }) => {
     const STATIC = import.meta.env.VITE_STATIC
-    const { loading, error, data } = STATIC === "1" ? useStaticFetch(`/api/tags/${tag}.json`) : useQuery(GET_TAG, {
+    const { loading, error, data } = STATIC === "1" ? useStaticFetch(`/tags/${tag}.json`) : useQuery(GET_TAG, {
         variables: {
             id: tag
         }

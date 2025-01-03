@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@apollo/client": "^3.7.2",
+    "@apollo/client": "^3.12.4",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.10.16",
@@ -19,9 +19,11 @@
     "@react-spring/web": "^9.5.5",
     "@react-three/drei": "^9.46.2",
     "@react-three/fiber": "^8.9.1",
+    "apollo-server-express": "^3.13.0",
     "axios": "^1.2.1",
     "camera-controls": "^1.37.4",
-    "graphql": "^16.6.0",
+    "express": "^4.21.2",
+    "graphql": "^16.10.0",
     "leva": "^0.9.34",
     "mui-image": "^1.0.7",
     "react": "^18.2.0",

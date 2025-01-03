@@ -67,7 +67,9 @@ const DialogContent = styled(MuiDialogContent)(({ theme }) => ({
 
 const Tree = (({ currentNode, treeData, style, defaultOpen = false }) => {
 
-    const STATIC = import.meta.env.VITE_STATIC
+    // const STATIC = import.meta.env.VITE_STATIC
+    const STATIC = "1"
+    
 
     const [isOpen, setOpen] = useState(defaultOpen)
     const [modalOpen, setModalOpen] = useState(false)

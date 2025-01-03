@@ -26,3 +26,4 @@ dist-ssr/
 # Deploy
 
 deploy.sh
+.vercel

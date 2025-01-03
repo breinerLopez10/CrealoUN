@@ -1,26 +1,34 @@
-import React, { useState } from 'react';
-import ReactPlayer from 'react-player';
+import React from 'react';
 
 const VideoPlayer = ({ src }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const toggleVideo = () => {
-    setIsPlaying(!isPlaying);
+  // Convierte una URL estándar de YouTube o YouTube Short en un enlace de inserción
+  const getEmbedUrl = (url) => {
+    const videoIdMatch = url.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)([a-zA-Z0-9_-]+)/);
+    const videoId = videoIdMatch ? videoIdMatch[1] : null;
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : '';
   };
 
+  const embedUrl = getEmbedUrl(src);
+
+  if (!embedUrl) {
+    return <p>Error: URL de YouTube no válida</p>;
+  }
+
   return (
-    <div>
-      <ReactPlayer
-        url={src} // La URL del video (puede ser de YouTube, Vimeo, o un archivo MP4)
-        playing={isPlaying} // Controla si el video está reproduciéndose
-        controls={true} // Mostrar controles
-        width="100%" // Ancho del video
-        height="auto" // Alto del video
-        muted={false} // Si deseas mutear el video por defecto, cámbialo a true
+    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+      <iframe
+        src={embedUrl}
+        frameBorder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+        }}
       />
-      <button onClick={toggleVideo}>
-        {isPlaying ? 'Pause' : 'Play'}
-      </button>
     </div>
   );
 };
