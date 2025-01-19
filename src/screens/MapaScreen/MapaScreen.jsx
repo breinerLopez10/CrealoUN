@@ -212,7 +212,7 @@ const MapaScreen = () => {
                 </div>
                 <div>
                   <div className="parrafo">
-                    <p className="bold">Integrantes laboratorios 2021-1</p>
+                    <p className="bold">Integrantes laboratorios 2023-1</p>
                     {
                       integrantes_2023_1.map((integrante, index) => (
                         <p key={index}>{integrante}</p>
