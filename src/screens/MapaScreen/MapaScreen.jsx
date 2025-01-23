@@ -22,54 +22,102 @@ const MapaScreen = () => {
   const { isMobile } = useDeviceDetect();
 
   const integrantes_2023_1 = [
-    "Valentina Lozano Sánchez",
-    "Martin Gabriel Castaño Hincapié",
-    "Sofía Sabina Yandar Sabogal",
-    "Damián René Rivera Ortiz",
-    "Lauren Jasury Micolta Gallego",
-    "William Camilo Castro Ciendua",
-    "Paola Andrea Aguirre Bravo",
-    "Sara Nicol Álvarez Rojas", 
-    "Santiago Sarmiento  Mora",
-    "César Luis Cerquera Montealegre",
-    "María Alejandra Ruiz Hernández",
-    "Laura Juliana Gáfaro Ortíz",
-    "Phoebe Mariana Lara Reina",
-    "María de los Ángeles León Moreno",
-    "Carol Marcela Turriago Valbuena",
-    "Gabriela Isabel Rico Ortega",
-    "Jefferson David Rocha Contreras",
-    "Greissy Gutiérrez Ortiz",
-    "Angie Lorena Pardo Rodríguez",
-    "José David García Castañeda",
-    "Juan Sebastián Guerrero González",
-    "Jhoan Andrés Ortiz Castillo",
-    "Jessica Alexandra Santos Contreras",
-    "Erick Santiago Díaz Bueno",
-    "Nicolás Alberto Ramírez Clavijo",
-    "Xuamy Sandrid Jamany Ariza Arciniegas",
-    "Daniela Parra Campos Iliana",
-    "Pastorany Martínez Guio",
-    "Estefanny Alejandra Martínez Montaño",
-    "Juan Esteban Bastidas Saavedr",
-    "Dayanna Lizeth Arteaga Segovia",
-    "Yiyi Alejandra López Torres",
-    "Daniela Alexandra Morales Rojas",
-    "Cristian Estiben Dulcey Zamudio",
-    "José Francisco Álvarez Morales",
-    "Deiby Mateo Trillos Vega",
-    "Óscar Rafael Torres Rosas",
-    "Daniela Valentina Afanador Jaimes",
-    "Miguel Ángel Pascuas Cely",
-    "Juliana Pasuy Jojoa",
-    "Jenaro Larios Carvajal",
-    "Melany Gipsy Moreno González",
-    "Miguel Ángel Mahecha Zamora",
-    "María Carolina Sarmiento-pérez Tapia",
-    "Andrés Felipe Lara López",
-    "Anamaría Rodríguez Ramírez",
-    "Johan Rodríguez Meneses",
+    "Victoria Andrea Blanco Ramírez",
+    "Julián Camilo Merchán Jiménez",
+    "Carlos David Blanco Mangonez",
+    "Danny Alejandro Pinto Correa",
+    "Luis Daniel Sánchez Molina",
+    "Carla Ordoñez Osorno",
+    "Lousiana Rojas Babativa",
+    "Luz Adriana Vera Villamizar",
+    "María Fernanda Rivera Urrego",
+    "Andrés Santiago Acevedo Mancera",
+    "Diana Carolina Oliva Bonilla",
+    "Luisa Giomar Tolosa Jaimes",
+    "Andrea Caterine Rivera Rivera",
+    "Javier Mateo Juyo Martín",
+    "Josías Andrade Segura",
+    "Evelyn Shirley Tucanés Córdoba",
+    "Leydi Daniela González Prada",
+    "Jhohan David Naranjo González",
+    "Rafael David Leal Padilla",
+    "Ana Karina Grimaldo Rojas",
+    "Jorge Luis Rojas Cabrera",
+    "Edwin Andrés Gamboa Peñaranda",
+    "Oriany Meller Cabrales",
+    "Andrés Felipe Vargas Jovel",
+    "David Mauricio Guevara Romero",
+    
   ];
+
+
+
+
+
+  const integrantes_2023_2 = [
+"Juan David Roa Ramírez",
+"Andrés Santiago Acevedo Mancera",
+"Duvan Stiven Izaquita Sepúlveda",
+"María Fernanda Rivera Urrego",
+"Anithza Alejandra Asís Manosalva",
+"Jennifer Dayana Gelvez Galvis",
+"Melissa Vallejo Carrillo",
+"Ángela Gissell Garzón Marín",
+"Luisa Giomar Tolosa Jaimes",
+"Jorge Eduardo Rendón Álvarez",
+"Andrés Felipe Vargas Jovel",
+"Leydi Daniela González Prada",
+"Juan David Ardila Díaz",
+"Rosa Cecilia Santofimio Medina",
+"Lousiana Rojas Babativa",
+"Jhohan David Naranjo González",
+"Diego Fernando Ramírez Mendivil",
+"Wilmer Alejandro Cante Muñoz",
+"Josías Andrade Segura",
+"Kevin Ricardo Moreno Medalles",
+"Sara Catalina Sánchez Suta",
+"Oriana Melissa Cruz Cárdenas",
+"Tatiana Alexandra Díaz Goyeneche",
+"Juan David Graciano Velasco",
+"Juan Esteban Vargas Góngora",
+"Julián Calid Mindiola Marín",
+"Ilhaine Katerinne Forero Alarcón",
+"Juan Camilo Villa Rodríguez",
+"Javier Mateo Juyo Martin",
+"Juan Sebastián Pachón Garzón",
+"Rafael David Leal Padilla",
+"Danna Alexandra Franco Mosquera",
+"Jesús David Causil Villadiego",
+"Juan Ángel Duque Lara",
+"Ikel Luis Álvarez Manjarrez",
+  ]
+
+  const integrantes_2023_3 = [
+"Ana María Mavisoy González",
+"Nicolás Gil Pachón",
+"Edwin Andrés Gamboa Peñaranda",
+"Andrea Catherine Rivera Rivera",
+"Rocha Rodríguez Dahiana Vanessa",
+"Jorge Iván Torres Ferrer",
+"María Fernanda Cedeño Reyes",
+"María de los Ángeles León Moreno",
+"Ana Karina Grimaldo Rojas",
+"Lictin Haydee Bernal Toledo",
+"Carla Ordoñez Osorno",
+"Juan David Martínez",
+"Evelyn Shirley Tucanés Córdoba",
+"Danny Alejandro Pinto Correa",
+
+
+  ]
+
+
+
+
+
+
+
+
 
 
   const styleTypography = {
@@ -144,7 +192,7 @@ const MapaScreen = () => {
               <div className="description mt-3">
                 <p style={{ fontSize: "1.2em"}}><span className="bold">CREA-LO</span> OTROS MUNDOS POSIBLES EN LA UNAL </p>
                 <p>Laboratorios, talleres y experiencias para el activismo cultural universitario.</p>
-                <p>2021</p>
+                <p>2023</p>
               </div>
 
               <div className="grid-2 grid-end gap-2" style={{alignItems: "start"}}>
@@ -170,45 +218,41 @@ const MapaScreen = () => {
                   </div>
                   <div className="parrafo">
                     <p className="bold">Coordinación general</p>
-                    <p>Diego García Bernal</p>
+                    <p>Daniela Ortiz López</p>
                   </div>
                   <div className="parrafo">
                     <p className="bold">Acompañamiento sensible</p>
-                    <p>Natalia Orozco Lucena</p>
-                    <p>Mateo Mejía Mejía</p>
+                    <p>Rafael Duarte Uriza
+                      María Natscheilly Torres
+                      Guadalupe Errázuriz
+                      Santiago González Álvarez
+                      </p>
+                  </div>
+                
+                  <div className="parrafo">
+                    <p className="bold">Estudiantes asistentes del proyecto 2023</p>
+                    <p>Hollman Ortiz</p>
+                    <p>Brian Gutiérrez</p>
+                    <p>Fernanda Montañez</p>
+                    <p>Edna Margarita Gómez</p>
+                    <p>Ángela María López Gómez</p>
+
                   </div>
                   <div className="parrafo">
-                    <p className="bold">Acompañamiento y producción sonora</p>
-                    <p>Sebastián Laura Wiesner</p>
+                    <p className="bold">Mediación pedagógica y cultural</p>
+                    <p>Bibiana Carvajal Bernal</p>
+                  
                   </div>
+
                   <div className="parrafo">
-                    <p className="bold">Profesores invitados del proyecto</p>
-                    <p>Emilio Carrera Quiroga</p>
-                    <p>Rafael Duarte Uriza</p>
-                    <p>Felipe León</p>
+                    <p className="bold">Diseño y desarrollo web</p>
+                    <p>Nelson Ivan Castellanos</p>
+                    <p>Andrés Mauricio Avilán</p>
+
+                  
                   </div>
-                  <div className="parrafo">
-                    <p className="bold">Estudiantes asistentes del proyecto</p>
-                    <p>Lina Constanza Mejía Ramírez</p>
-                    <p>Diego Fernando Díaz Daza</p>
-                    <p>Diana Lorena Cuervo Piñeros</p>
-                  </div>
-                  <div className="parrafo">
-                    <p className="bold">Laboratorio Editorial</p>
-                    <p>Antonia Lagos Arévalo</p>
-                    <p>Damián René Rivera Ortiz</p>
-                    <p>José David García Castañeda</p>
-                    <p>José Francisco Álvarez Morales</p>
-                    <p>Lina Constanza Mejía Ramírez</p>
-                    <p>María Carolina Sarmiento-pérez Tapia</p>
-                    <p>María de los Ángeles León Moreno</p>
-                    <p>Martín Gabriel Castaño Hincapié</p>
-                    <p>Óscar Rafael Torres Rosas</p>
-                    <p>Sebastián Ramírez Monsalve</p>
-                    <p>Yiyi Alejandra López Torres</p>
-                    <p>Diego García Bernal</p>
-                    <p>Juan Mojica P</p>
-                  </div>
+
+                  
                 </div>
                 <div>
                   <div className="parrafo">
@@ -220,6 +264,36 @@ const MapaScreen = () => {
                     }
                   
                   </div>
+
+
+                  <div className="parrafo">
+                    <p className="bold">Integrantes laboratorios 2023-2</p>
+                    {
+                      integrantes_2023_2.map((integrante, index) => (
+                        <p key={index}>{integrante}</p>
+                      ))
+                    }
+                  
+                  </div>
+                 
+
+                  <div className="parrafo">
+                    <p className="bold">Integrantes laboratorios 2023-2 Caja de herramientas</p>
+                    {
+                      integrantes_2023_3.map((integrante, index) => (
+                        <p key={index}>{integrante}</p>
+                      ))
+                    }
+                  
+                  </div>
+
+
+
+
+
+
+
+
                 </div>
               </div>
             </div>
@@ -253,7 +327,7 @@ const MapaScreen = () => {
                   </div>
                   <div className="parrafo">
                     <p>Email: culturabien_bog@unal.edu.co</p>
-                    <p>Facebook: </p>
+                   
                     <p>Área Cultura Unal Bog</p>
                   </div>
                 </div>

@@ -210,7 +210,7 @@ export default props => {
   target="_blank" 
   rel="noopener noreferrer"
 >
-  Crealo UN <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8" }}>2024</span>
+Para-celebrar <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8" }}>2024</span>
 </a>
 
                 <hr className="separator" />
@@ -238,7 +238,7 @@ export default props => {
                             textAlign: "left",
                             textDecoration: "none",
                             transition: "color 0.2s",
-                        }} my={0}>Crealo UN <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8"}}>2023</span></Typography>
+                        }} my={0}>Árbol <span style={{ fontSize: "1rem", fontWeight: "bold", opacity: "0.8"}}>2023</span></Typography>
                     </AccordionSummary>
                 
                     <AccordionDetails>
